@@ -1,0 +1,9 @@
+# /prometheus/prometheus.yml
+
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'sharding-demo'
+    static_configs:
+      - targets: ['localhost:8080']
